@@ -1,7 +1,12 @@
 <body>
   <div class="container">
     <header>
-      <h1>Todo List</h1>
+      <h1>Point Board - {{calcScore}}</h1>
+      <form class="new-item">
+        <input type="text" name="text" placeholder="Type to add a new item" />
+        <input type="number" name="number" placeholder="Enter the point value" />
+        <input type="submit" style="position: absolute; left: -9999px" tabindex="-1"/>
+      </form>
     </header>
 
     <ul>
@@ -11,7 +16,3 @@
     </ul>
   </div>
 </body>
-
-<template name="item">
-  <li>{{text}}</li>
-</template>
